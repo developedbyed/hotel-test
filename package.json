@@ -1,0 +1,17 @@
+{
+  "name": "sep-hotel",
+  "version": "1.0.0",
+  "description": "Sep Hotel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Simo Edwin",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-sass": "^3.2.1"
+  }
+}

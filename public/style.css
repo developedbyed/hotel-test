@@ -1,0 +1,347 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+header {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8))), url("../public/img/cover.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8)), url("../public/img/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif; }
+  header .logo {
+    min-height: 10vh;
+    background-color: #385577;
+    width: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: white; }
+  header .intro {
+    color: #e7e7e7;
+    min-height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    header .intro h1 {
+      font-size: 50px;
+      padding-bottom: 20px;
+      -webkit-animation: titleFade 0.5s ease-in 0.5s forwards;
+      animation: titleFade 0.5s ease-in 0.5s forwards;
+      opacity: 0; }
+    header .intro p {
+      font-size: 20px;
+      padding: 20px 40px;
+      border-top: 1px solid white;
+      margin-top: 20px;
+      opacity: 0;
+      -webkit-animation: titleFade 0.5s ease-in 1s forwards;
+      animation: titleFade 0.5s ease-in 1s forwards; }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    margin: auto;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    min-height: 10vh;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    header nav #about, header nav #contact {
+      background-color: #385577;
+      padding: 15px 30px;
+      min-width: 140px;
+      font-size: 17px;
+      border: 2px solid #385577;
+      border-radius: 3px;
+      color: white;
+      opacity: 0;
+      font-family: 'Montserrat', sans-serif;
+      -webkit-animation: titleFade 0.5s ease-in 1.3s forwards;
+      animation: titleFade 0.5s ease-in 1.3s forwards;
+      cursor: pointer; }
+
+@-webkit-keyframes titleFade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes titleFade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.rooms {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f1f1f1; }
+  .rooms .room1, .rooms .room2, .rooms .room3 {
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .rooms .room1 .intro1, .rooms .room1 .intro2, .rooms .room1 .intro3, .rooms .room2 .intro1, .rooms .room2 .intro2, .rooms .room2 .intro3, .rooms .room3 .intro1, .rooms .room3 .intro2, .rooms .room3 .intro3 {
+      width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: relative; }
+      .rooms .room1 .intro1 img, .rooms .room1 .intro2 img, .rooms .room1 .intro3 img, .rooms .room2 .intro1 img, .rooms .room2 .intro2 img, .rooms .room2 .intro3 img, .rooms .room3 .intro1 img, .rooms .room3 .intro2 img, .rooms .room3 .intro3 img {
+        height: 150px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -30%);
+        transform: translate(-50%, -30%); }
+      .rooms .room1 .intro1 p, .rooms .room1 .intro2 p, .rooms .room1 .intro3 p, .rooms .room2 .intro1 p, .rooms .room2 .intro2 p, .rooms .room2 .intro3 p, .rooms .room3 .intro1 p, .rooms .room3 .intro2 p, .rooms .room3 .intro3 p {
+        padding: 10px;
+        width: 50%;
+        line-height: 30px; }
+      .rooms .room1 .intro1 h1, .rooms .room1 .intro2 h1, .rooms .room1 .intro3 h1, .rooms .room2 .intro1 h1, .rooms .room2 .intro2 h1, .rooms .room2 .intro3 h1, .rooms .room3 .intro1 h1, .rooms .room3 .intro2 h1, .rooms .room3 .intro3 h1 {
+        color: #385577;
+        font-size: 30px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        text-align: center; }
+    .rooms .room1 .showcase1, .rooms .room1 .showcase2, .rooms .room1 .showcase3, .rooms .room2 .showcase1, .rooms .room2 .showcase2, .rooms .room2 .showcase3, .rooms .room3 .showcase1, .rooms .room3 .showcase2, .rooms .room3 .showcase3 {
+      width: 50%; }
+      .rooms .room1 .showcase1 img, .rooms .room1 .showcase2 img, .rooms .room1 .showcase3 img, .rooms .room2 .showcase1 img, .rooms .room2 .showcase2 img, .rooms .room2 .showcase3 img, .rooms .room3 .showcase1 img, .rooms .room3 .showcase2 img, .rooms .room3 .showcase3 img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover; }
+  .rooms .room2 .intro2 {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1; }
+
+.contact {
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif; }
+  .contact .info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #2e2e2e;
+    color: white; }
+    .contact .info .info-title h1 {
+      margin-top: 40px;
+      font-size: 40px; }
+    .contact .info .info-box {
+      min-height: 50vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      font-size: 18px; }
+      .contact .info .info-box p {
+        padding: 30px; }
+  .contact iframe {
+    width: 100%;
+    min-height: 70vh; }
+
+footer {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 10vh;
+  background-color: #385577;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  footer h1 {
+    font-size: 20px; }
+  footer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    footer div p {
+      padding: 10px; }
+
+.slide {
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease; }
+
+.fade {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px); }
+
+hr {
+  height: 1px;
+  border: none;
+  background: #385577;
+  width: 20%;
+  margin: 0;
+  margin: 0 auto; }
+
+@media screen and (max-width: 1024px) {
+  header .logo {
+    width: 100%; }
+  header .intro h1 {
+    font-size: 22px; }
+  header .intro p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 15px 0px;
+    width: 80%; }
+  header nav {
+    width: 80%; }
+    header nav #about, header nav #contact {
+      padding: 10px 10px;
+      min-width: 90px; }
+  .rooms .room1, .rooms .room2, .rooms .room3 {
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 100%; }
+    .rooms .room1 .intro1, .rooms .room1 .intro2, .rooms .room1 .intro3, .rooms .room2 .intro1, .rooms .room2 .intro2, .rooms .room2 .intro3, .rooms .room3 .intro1, .rooms .room3 .intro2, .rooms .room3 .intro3 {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      width: 100%;
+      display: block; }
+      .rooms .room1 .intro1 img, .rooms .room1 .intro2 img, .rooms .room1 .intro3 img, .rooms .room2 .intro1 img, .rooms .room2 .intro2 img, .rooms .room2 .intro3 img, .rooms .room3 .intro1 img, .rooms .room3 .intro2 img, .rooms .room3 .intro3 img {
+        display: none; }
+      .rooms .room1 .intro1 p, .rooms .room1 .intro2 p, .rooms .room1 .intro3 p, .rooms .room2 .intro1 p, .rooms .room2 .intro2 p, .rooms .room2 .intro3 p, .rooms .room3 .intro1 p, .rooms .room3 .intro2 p, .rooms .room3 .intro3 p {
+        width: 90%;
+        text-align: center; }
+      .rooms .room1 .intro1 h1, .rooms .room1 .intro2 h1, .rooms .room1 .intro3 h1, .rooms .room2 .intro1 h1, .rooms .room2 .intro2 h1, .rooms .room2 .intro3 h1, .rooms .room3 .intro1 h1, .rooms .room3 .intro2 h1, .rooms .room3 .intro3 h1 {
+        font-size: 18px;
+        padding: 10px; }
+    .rooms .room1 .showcase1, .rooms .room1 .showcase2, .rooms .room1 .showcase3, .rooms .room2 .showcase1, .rooms .room2 .showcase2, .rooms .room2 .showcase3, .rooms .room3 .showcase1, .rooms .room3 .showcase2, .rooms .room3 .showcase3 {
+      width: 100%;
+      margin: 0; }
+  .contact {
+    display: block; }
+    .contact .info {
+      width: 100%;
+      min-height: 40vh;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .contact .info .info-box {
+        font-size: 16px;
+        padding: 5px 20px;
+        line-height: 1.5em; }
+    .contact iframe {
+      width: 100%; }
+  footer h1 {
+    text-align: center;
+    font-size: 16px; }
+  footer div {
+    display: block; }
+    footer div .phone {
+      display: none; } }
