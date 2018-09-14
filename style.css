@@ -47,8 +47,8 @@ table {
 
 header {
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8))), url("../public/img/cover.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.8)), url("../public/img/cover.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8))), url("./img/cover.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8)), url("./img/cover.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
